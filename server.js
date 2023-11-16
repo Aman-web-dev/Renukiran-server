@@ -6,7 +6,7 @@ const cors = require("cors");
 const contactRoute =require('./Routes/ContactRoute')
 
 
-app.use(cors({ origin: '*' }));
+app.use(cors());
 
 
 const PORT =process.env.PORT || 5000;
