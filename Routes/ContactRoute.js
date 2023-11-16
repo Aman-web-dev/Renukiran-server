@@ -13,7 +13,7 @@ router.post('/contact', async (req, res) => {
 
 
         console.error(error);
-        res.status(500).json({ error })
+        res.status(500).json(error)
     }
 })
 
