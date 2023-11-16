@@ -7,11 +7,13 @@ const contactRoute =require('./Routes/ContactRoute')
 
 
 app.use(cors({ origin: '*' }));
-const port = 5000;
+
+
+const PORT =process.env.PORT || 5000;
 
 app.use('/api',contactRoute)  
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${PORT}`);
 });
