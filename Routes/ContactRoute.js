@@ -13,7 +13,7 @@ router.post('/contact', async (req, res) => {
 
 
         console.error(error);
-        res.status(500).json({ error: "Data Couldn't Be Uploaded issue Caused In Server" })
+        res.status(500).json({ error: error })
     }
 })
 
