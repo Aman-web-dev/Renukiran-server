@@ -10,7 +10,6 @@ const jobApplicationSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    // You might want to add a custom email validation here
   },
   phone: {
     type: String,
